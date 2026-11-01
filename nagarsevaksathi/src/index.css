@@ -1,0 +1,296 @@
+/* ==========================================================================
+   ONE - REACT NEXT.JS & ANT DESIGN ADMIN TEMPLATE THEME SYSTEM
+   Tailored for Jalna Municipal Corporation 100 TPD SWM Executive Dashboard
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Mukta:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root,
+[data-theme="light"] {
+  /* Typography - Matching Jalna Municipal Official Portal (jcmcjalna.org) */
+  --font-sans: 'Noto Sans Devanagari', 'Mukta', 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Noto Sans Devanagari', 'Poppins', 'Mukta', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, Menlo, monospace;
+
+  /* Ant Design Theme Colors (One Admin Template Light Scheme) */
+  --antd-bg-layout: #f0f2f5;
+  --antd-bg-container: #ffffff;
+  --antd-bg-elevated: #ffffff;
+  --antd-bg-spotlight: #fafafa;
+  --antd-bg-hover: #f5f5f5;
+  --antd-bg-subtle: #f8fafc;
+
+  /* Borders */
+  --antd-border: #f0f0f0;
+  --antd-border-secondary: #e8e8e8;
+  --antd-border-strong: #d9d9d9;
+  --antd-border-focus: #4096ff;
+
+  /* Typography / Text Colors */
+  --antd-text-title: #1f1f1f;
+  --antd-text-body: #434343;
+  --antd-text-secondary: #595959;
+  --antd-text-muted: #8c8c8c;
+  --antd-text-light: #bfbfbf;
+
+  /* Ant Design Primary Colors */
+  --antd-primary: #1677ff;
+  --antd-primary-hover: #4096ff;
+  --antd-primary-active: #0958d9;
+  --antd-primary-bg: #e6f4ff;
+  --antd-primary-border: #91caff;
+  --antd-primary-text: #0958d9;
+
+  /* Ant Design Warning / Jalna Municipal SWM Orange */
+  --antd-warning: #fa8c16;
+  --antd-warning-hover: #ffa940;
+  --antd-warning-active: #d46b08;
+  --antd-warning-bg: #fff7e6;
+  --antd-warning-border: #ffd591;
+  --antd-warning-text: #d46b08;
+
+  /* Ant Design Success / Swachh Green */
+  --antd-success: #52c41a;
+  --antd-success-hover: #73d13d;
+  --antd-success-active: #389e0d;
+  --antd-success-bg: #f6ffed;
+  --antd-success-border: #b7eb8f;
+  --antd-success-text: #389e0d;
+
+  /* Ant Design Danger / Alert Red */
+  --antd-error: #ff4d4f;
+  --antd-error-hover: #ff7875;
+  --antd-error-bg: #fff2f0;
+  --antd-error-border: #ffccc7;
+  --antd-error-text: #cf1322;
+
+  /* Ant Design Info Cyan */
+  --antd-info: #13c2c2;
+  --antd-info-bg: #e6fffb;
+  --antd-info-border: #87e8de;
+  --antd-info-text: #08979c;
+
+  /* Ant Design v5 Elevation Shadows */
+  --antd-shadow-card: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 1px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+  --antd-shadow-hover: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  --antd-shadow-header: 0 1px 4px rgba(0, 21, 41, 0.08);
+  --antd-shadow-dropdown: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  --antd-shadow-modal: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+
+  /* Radius */
+  --antd-radius-base: 8px;
+  --antd-radius-sm: 4px;
+  --antd-radius-lg: 12px;
+  --antd-radius-full: 9999px;
+
+  /* Layout dimensions */
+  --nav-height: 56px;
+  --subnav-height: 44px;
+
+  /* Backward Compatibility Aliases */
+  --color-green-primary: var(--antd-success);
+  --color-green-light: var(--antd-success-hover);
+  --color-green-bg: var(--antd-success-bg);
+  --color-green-border: var(--antd-success-border);
+
+  --color-orange-primary: var(--antd-warning);
+  --color-orange-light: var(--antd-warning-hover);
+  --color-orange-bg: var(--antd-warning-bg);
+  --color-orange-border: var(--antd-warning-border);
+
+  --color-black-pure: var(--antd-bg-layout);
+  --color-black-surface: var(--antd-bg-container);
+  --color-black-card: var(--antd-bg-container);
+  --color-black-card-solid: var(--antd-bg-container);
+  --color-black-hover: var(--antd-bg-hover);
+
+  --color-white-pure: #ffffff;
+  --color-white-off: #f8fafc;
+  --color-white-muted: #e2e8f0;
+
+  --text-primary: var(--antd-text-title);
+  --text-secondary: var(--antd-text-body);
+  --text-muted: var(--antd-text-muted);
+  --text-dark: var(--antd-text-title);
+
+  --border-subtle: var(--antd-border);
+  --border-card: var(--antd-border);
+}
+
+/* ==========================================================================
+   ANT DESIGN DARK SCHEME (One Admin Template Dark Mode)
+   ========================================================================== */
+[data-theme="dark"] {
+  --antd-bg-layout: #141414;
+  --antd-bg-container: #1f1f1f;
+  --antd-bg-elevated: #262626;
+  --antd-bg-spotlight: #262626;
+  --antd-bg-hover: #2a2a2a;
+  --antd-bg-subtle: #191919;
+
+  /* Dark Borders */
+  --antd-border: #303030;
+  --antd-border-secondary: #3a3a3a;
+  --antd-border-strong: #434343;
+  --antd-border-focus: #177ddc;
+
+  /* Dark Typography */
+  --antd-text-title: rgba(255, 255, 255, 0.95);
+  --antd-text-body: rgba(255, 255, 255, 0.85);
+  --antd-text-secondary: rgba(255, 255, 255, 0.65);
+  --antd-text-muted: rgba(255, 255, 255, 0.45);
+  --antd-text-light: rgba(255, 255, 255, 0.25);
+
+  /* Primary Dark */
+  --antd-primary: #177ddc;
+  --antd-primary-hover: #3c9ae8;
+  --antd-primary-active: #1765ad;
+  --antd-primary-bg: rgba(23, 125, 220, 0.18);
+  --antd-primary-border: rgba(23, 125, 220, 0.4);
+  --antd-primary-text: #69b1ff;
+
+  /* Warning Dark */
+  --antd-warning: #fa8c16;
+  --antd-warning-hover: #ffa940;
+  --antd-warning-active: #d46b08;
+  --antd-warning-bg: rgba(250, 140, 22, 0.18);
+  --antd-warning-border: rgba(250, 140, 22, 0.4);
+  --antd-warning-text: #ffa940;
+
+  /* Success Dark */
+  --antd-success: #49aa19;
+  --antd-success-hover: #6abe39;
+  --antd-success-active: #3c8618;
+  --antd-success-bg: rgba(73, 170, 25, 0.18);
+  --antd-success-border: rgba(73, 170, 25, 0.4);
+  --antd-success-text: #73d13d;
+
+  /* Danger Dark */
+  --antd-error: #a61d24;
+  --antd-error-hover: #e84749;
+  --antd-error-bg: rgba(166, 29, 36, 0.2);
+  --antd-error-border: rgba(166, 29, 36, 0.4);
+  --antd-error-text: #ff7875;
+
+  /* Shadows Dark */
+  --antd-shadow-card: 0 1px 2px 0 rgba(0, 0, 0, 0.45), 0 1px 6px -1px rgba(0, 0, 0, 0.3);
+  --antd-shadow-hover: 0 6px 16px 0 rgba(0, 0, 0, 0.6);
+  --antd-shadow-header: 0 1px 4px rgba(0, 0, 0, 0.45);
+  --antd-shadow-dropdown: 0 6px 16px 0 rgba(0, 0, 0, 0.6);
+  --antd-shadow-modal: 0 6px 16px 0 rgba(0, 0, 0, 0.7);
+
+  /* Backward Compatibility in Dark */
+  --color-black-pure: #141414;
+  --color-black-surface: #1f1f1f;
+  --color-black-card: #1f1f1f;
+  --color-black-card-solid: #1f1f1f;
+  --color-black-hover: #262626;
+
+  --text-primary: rgba(255, 255, 255, 0.95);
+  --text-secondary: rgba(255, 255, 255, 0.75);
+  --text-muted: rgba(255, 255, 255, 0.45);
+  --text-dark: #ffffff;
+
+  --border-subtle: #303030;
+  --border-card: #303030;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--antd-bg-layout);
+  color: var(--antd-text-body);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Scrollbar - Ant Design Styled */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--antd-border-strong);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--antd-text-muted);
+}
+
+/* Typography elements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--antd-text-title);
+  letter-spacing: -0.015em;
+  transition: color 0.2s ease;
+}
+
+kbd {
+  display: inline-block;
+  padding: 2px 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  background-color: var(--antd-bg-spotlight);
+  border: 1px solid var(--antd-border-strong);
+  border-radius: 4px;
+  color: var(--antd-text-secondary);
+}
+
+/* Common Ant Design Color Utility Classes */
+.text-orange-400,
+.text-orange-500 {
+  color: var(--antd-warning) !important;
+}
+
+.text-green-400,
+.text-green-500 {
+  color: var(--antd-success) !important;
+}
+
+.text-blue-400,
+.text-blue-500 {
+  color: var(--antd-primary) !important;
+}
+
+.text-white {
+  color: var(--antd-text-title) !important;
+}
+
+.bg-orange-500 {
+  background-color: var(--antd-warning) !important;
+}
+
+.bg-green-500 {
+  background-color: var(--antd-success) !important;
+}
+
+.bg-blue-500 {
+  background-color: var(--antd-primary) !important;
+}
+
+.bg-yellow-500 {
+  background-color: #faad14 !important;
+}
