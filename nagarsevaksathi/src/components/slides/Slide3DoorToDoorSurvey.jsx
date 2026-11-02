@@ -130,7 +130,7 @@ export default function Slide3DoorToDoorSurvey({ language }) {
             <div className="card-top-icon">
               <BarChart3 size={22} className="text-green-500" />
               <h3 className="card-h3">
-                {isMr ? 'जालना शहर कचरा निर्मितीचे मूल्यांकन (१००+ TPD)' : 'Jalna City Waste Quantification (100+ TPD)'}
+                {isMr ? 'जालना शहर कचरा निर्मितीचे मूल्यांकन (१५०+ TPD)' : 'Jalna City Waste Quantification (150+ TPD)'}
               </h3>
             </div>
 

@@ -20,7 +20,7 @@ export default function Slide1Hero({ onNext, onJumpTo, onOpenLetter, language })
             </span>
             <span className="hero-pill-badge badge-black">
               <Sparkles size={13} className="text-orange-400" />
-              {isMr ? 'किमान १०० TPD क्षमता' : 'Min 100 TPD Capacity'}
+              {isMr ? '१५०+ TPD क्षमता' : '150+ TPD Capacity'}
             </span>
           </div>
 
@@ -53,7 +53,7 @@ export default function Slide1Hero({ onNext, onJumpTo, onOpenLetter, language })
           {/* Key Metrics */}
           <div className="hero-stats-row">
             <div className="stat-card">
-              <div className="stat-val text-green-400">१००+ TPD</div>
+              <div className="stat-val text-green-400">{isMr ? '१५०+ TPD' : '150+ TPD'}</div>
               <div className="stat-lbl">{isMr ? 'दैनिक संकलन क्षमता' : 'Daily Collection Capacity'}</div>
             </div>
             <div className="stat-card">

@@ -18,7 +18,7 @@ export default function Slide9MonitoringAccountability({ language }) {
     },
     {
       kpi: isMr ? "दैनिक कचरा संकलन व सुपूर्द" : "Daily Waste Delivered",
-      target: "१००+ TPD",
+      target: isMr ? "१५०+ TPD" : "150+ TPD",
       timeline: isMr ? "दैनंदिन हमी" : "Daily Guaranteed",
       metric: isMr ? "संगणकीकृत वे-ब्रिज वजन नोंदी" : "Computerized weighbridge manifests"
     },
